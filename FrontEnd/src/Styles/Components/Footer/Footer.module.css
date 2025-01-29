@@ -1,0 +1,59 @@
+@import '../../Global//Global.css';
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+
+    top: 1000px;
+
+    background: transparent;
+}
+
+.DireitosEDev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 408px;
+    height: 41px;
+    left: calc(50% - 408px/2);
+    top: calc(50% - 41px/2);
+}
+
+.Direitos {
+    width: 408px;
+    height: 18px;
+
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--branco);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Dev {
+    width: 244.4px;
+    height: 15px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}

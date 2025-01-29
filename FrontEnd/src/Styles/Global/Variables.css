@@ -1,0 +1,21 @@
+:root {
+    /* CORES */
+    --branco: #F8F7ED;
+    --cinza: #A7A7A7;
+    --preto: #121212;
+    --vermelho: #FF5252;
+
+    /* CORES ADICIONAIS */
+    --amarelo: #EEB564;
+    --cinza-escuro: #444444;
+    --verde: #64EE92;
+    --vermelho-selection: #EE6464;
+    --preto-adicional: #1E1E1E;
+
+    /* FONTES */
+    --font-poppins: 'Poppins', sans-serif;
+    --font-exo: 'Exo', sans-serif;
+
+    /* COR COMPONENTS */
+    --footer-background: transparent;
+}
