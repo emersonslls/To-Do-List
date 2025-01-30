@@ -1,0 +1,164 @@
+@import '../../Global/Global.css';
+
+.SectionTarefas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  position: absolute;
+  width: 1280px;
+  height: auto;
+  left: calc(50% - 1280px/2);
+  top: 200px;
+
+  background-color: red;
+}
+
+.Tarefas {
+  box-sizing: border-box;
+
+  width: 400px;
+  height: auto;
+  min-height: 150px;
+
+  background: rgba(68, 68, 68, 0.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 18px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.NomeSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 100px;
+
+  position: relative;
+  width: 360px;
+  height: 20px;
+  left: calc(50% - 360px/2);
+  top: 10px;
+}
+
+.NomeSection h1 {
+  width: auto;
+  height: 11px;
+
+  font-family: var(--font-poppins);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  leading-trim: both;
+  text-edge: cap;
+  display: flex;
+  align-items: center;
+
+  color: var(--branco);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.NomeSection span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+
+  width: 20px;
+  height: 20px;
+
+  background: var(--cinza-escuro);
+  border-radius: 100px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  font-family: var(--font-poppins);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+
+  leading-trim: both;
+  text-edge: cap;
+  display: flex;
+  align-items: center;
+
+  color: var(--branco);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.AddButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  padding: 0px;
+  margin-top: 30px;
+
+  position: absolute;
+  width: 360px;
+  height: 20px;
+  left: calc(50% - 360px/2);
+  bottom: 15px;
+}
+
+.TaskList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+
+.Task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  color: white;
+  font-family: var(--font-poppins);
+  font-size: 14px;
+  cursor: grab;
+}
+
+.Task:active {
+  cursor: grabbing;
+}
+
+.DeleteButton {
+  background: red;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DeleteButton:hover {
+  background: darkred;
+}
