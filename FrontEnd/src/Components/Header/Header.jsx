@@ -48,13 +48,16 @@ function Header() {
                     className={styles.searchIcon}
                 />
             </div>
-            <div className={styles.profileContainer}>
-                <img
-                    src={profilePic}
-                    alt="Foto de Perfil"
-                    className={styles.profilePic}
-                />
-            </div>
+            <Link to='/login'> 
+                <div className={styles.profileContainer}>
+                    <img
+                        src={profilePic}
+                        alt="Foto de Perfil"
+                        className={styles.profilePic}
+                    />
+                </div>
+            </Link>
+
         </header>
     );
 }

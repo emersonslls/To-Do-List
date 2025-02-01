@@ -18,10 +18,10 @@ function Home() {
             <Header />
             <section className={styles.sectionHome}>
                 <img src={Background} className={styles.Background} />
-                TESTE TEXT TESTE TEXTTEST
                 <TodoList />
+                 <Footer />
             </section>
-            <Footer />
+           
         </>
     );
 }

@@ -14,7 +14,10 @@ function Footer() {
                 <h1 className={styles.Direitos}>
                     © Todos os direitos reservados - Emerson Sales
                 </h1>
-                <img src={SalesDev} className={styles.Dev}/>
+                <a href="https://emersonsalesdev.vercel.app"
+                    target="_blank">
+                    <img src={SalesDev} className={styles.Dev} />
+                </a>
             </div>
         </footer>
     );

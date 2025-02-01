@@ -5,9 +5,9 @@ footer {
     width: 100%;
     height: 80px;
 
-    top: 1000px;
+    bottom: 0;
 
-    background: transparent;
+    background: var(--footer-background);
 }
 
 .DireitosEDev {
