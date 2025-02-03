@@ -1,6 +1,6 @@
 /* <--- FUNCTIONS REACT ---> */
 import React, { useRef, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate  } from "react-router-dom";
 
 /* <--- CSS ---> */
 import styles from '../../Styles/Pages/Login/Login.module.css';
@@ -15,6 +15,7 @@ import Logo from '../../Assets/Logo.png';
 function Login() {
 
     const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <>
@@ -53,7 +54,7 @@ function Login() {
                         Ainda não tem <span>&nbsp;cadastro?</span>
                     </h2>
                     <p className={styles.SubTitulo}>Faça seu cadastro!</p>
-                    <button className={styles.Btn_Register}>Faça seu cadastro</button>
+                    <button className={styles.Btn_Register} onClick={() => navigate("/cadastro")}>Faça seu cadastro</button>
                 </div>
                 <Footer />
             </section>

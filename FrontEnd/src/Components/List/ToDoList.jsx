@@ -104,10 +104,13 @@ export default function TodoList() {
                   <img
                     src={AdicionarNovaTarefa}
                     className={styles.AddButton}
-                    onClick={() => setShowModal(true)}
+                    onClick={() => {
+                      setShowModal(true);
+                      setSelectedColumn(columnId);
+                    }}
                     alt="Adicionar Tarefa"
                   />
-                 <div className={styles.TaskList}>
+                  <div className={styles.TaskList}>
                     {column.items.map((item, index) => (
                       <Draggable key={item.id} draggableId={item.id} index={index}>
                         {(provided) => (
@@ -149,8 +152,7 @@ export default function TodoList() {
             />
             <div className={styles.CategoryOptions}>
               <div
-                className={`${styles.CategoryOption} ${selectedColumn === "toDo" ? styles.Selected : ""
-                  }`}
+                className={`${styles.CategoryOption} ${selectedColumn === "toDo" ? `${styles.Selected} ${styles.toDo}` : ""}`}
                 onClick={() => setSelectedColumn("toDo")}
               >
                 <div className={styles.Category}>
@@ -160,8 +162,7 @@ export default function TodoList() {
                 <img src={Check} />
               </div>
               <div
-                className={`${styles.CategoryOption} ${selectedColumn === "inProgress" ? styles.Selected : ""
-                  }`}
+                className={`${styles.CategoryOption} ${selectedColumn === "inProgress" ? `${styles.Selected} ${styles.inProgress}` : ""}`}
                 onClick={() => setSelectedColumn("inProgress")}
               >
                 <div className={styles.Category}>
@@ -171,8 +172,7 @@ export default function TodoList() {
                 <img src={Check} />
               </div>
               <div
-                className={`${styles.CategoryOption} ${selectedColumn === "done" ? styles.Selected : ""
-                  }`}
+                className={`${styles.CategoryOption} ${selectedColumn === "done" ? `${styles.Selected} ${styles.done}` : ""}`}
                 onClick={() => setSelectedColumn("done")}
               >
                 <div className={styles.Category}>

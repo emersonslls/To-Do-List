@@ -1,6 +1,6 @@
 /* <--- FUNCTIONS REACT ---> */
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 /* <--- CSS ---> */
 import styles from "../../Styles/Components/Header/Header.module.css";
@@ -11,8 +11,8 @@ import Logo from "../../Assets/Logo.png";
 import DefaultProfilePic from "../../Assets/Profile.png";
 
 function Header() {
-    const [searchTerm, setSearchTerm] = useState(""); // Estado para o termo de busca
-    const [profilePic, setProfilePic] = useState(DefaultProfilePic); // Estado para a foto de perfil
+    const [searchTerm, setSearchTerm] = useState("");
+    const [profilePic, setProfilePic] = useState(DefaultProfilePic); 
 
     const items = ["Camiseta", "Calça", "Jaqueta", "Vestido", "Blusa", "Shorts"]; // Lista de itens
 
@@ -29,6 +29,8 @@ function Header() {
     const filteredItems = items.filter((item) =>
         item.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+    const navigate = useNavigate();
 
     return (
         <header>
@@ -57,6 +59,7 @@ function Header() {
                     />
                 </div>
             </Link>
+            <button className={styles.LoginButton} onClick={() => navigate("/login")}>Faça login</button>
 
         </header>
     );

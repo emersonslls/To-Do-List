@@ -14,6 +14,7 @@
     --cinza-botao: #757474;
     --verde-button-active: #63C766;
     --vermelho-hover: #cf4444;
+    --button-vermelho: linear-gradient(270deg, #EE6464 0%, #FF5252 100%);
 
     /* FONTES */
     --font-poppins: 'Poppins', sans-serif;
@@ -21,4 +22,18 @@
 
     /* COR COMPONENTS */
     --footer-background: transparent;
+}
+
+/* <--- SCROLLBAR ---> */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--preto);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--vermelho);
+    border-radius: 25px;
 }

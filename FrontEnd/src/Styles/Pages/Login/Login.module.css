@@ -231,6 +231,10 @@
     flex-grow: 0;
 }
 
+.EsqueceuSenha:active {
+    color: var(--vermelho);
+}
+
 .button {
     display: flex;
     flex-direction: row;
@@ -245,7 +249,7 @@
     left: calc(50% - 460px/2);
     top: 272px;
 
-    background: var(--vermelho);
+    background: var( --button-vermelho);
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -341,7 +345,7 @@
     left: calc(50% - 360px/2);
     top: 84px;
 
-    background: var(--vermelho);
+    background: var( --button-vermelho  );
     border-radius: 8px;
     border: none;
     cursor: pointer;

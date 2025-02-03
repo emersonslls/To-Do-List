@@ -250,9 +250,9 @@
 
     position: relative;
     width: 395px;
-    height: 32px;
+    height: 40px;
     left: calc(50% - 395px/2);
-    top: 52px;
+    top: 54px;
 
     background: var(--preto-adicional);
     border-radius: 8px;
@@ -380,8 +380,16 @@
   }
 }
 
-.CategoryOption.Selected {
+.CategoryOption.Selected.toDo {
   background: var(--vermelho-selection);
+}
+
+.CategoryOption.Selected.inProgress {
+  background: var(--amarelo);
+}
+
+.CategoryOption.Selected.done {
+  background: var(--verde);
 }
 
 .CategoryOption.Selected p {

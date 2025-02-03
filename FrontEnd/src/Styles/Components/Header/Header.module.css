@@ -83,9 +83,55 @@ header::before {
 }
 
 .profileContainer {
+    display: none;
     position: absolute;
     width: 40px;
     height: 40px;
     right: 339px;
     top: calc(50% - 40px/2);
+}
+
+.LoginButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    position: absolute;
+    width: 147px;
+    height: 45px;
+    right: 339px;
+    top: calc(50% - 45px/2);
+
+    background: var( --button-vermelho);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    font-family: var(--font-exo);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 10px;
+
+    leading-trim: both;
+    text-edge: cap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: var(--branco);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.LoginButton:hover{
+    background: var(--vermelho-hover);
+}
+
+.LoginButton:active{
+    background: var(--vermelho);
 }
