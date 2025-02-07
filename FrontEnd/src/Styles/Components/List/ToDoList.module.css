@@ -92,7 +92,7 @@
   font-family: var(--font-poppins);
   font-style: normal;
   font-weight: 500;
-  font-size: 8px;
+  font-size: 12px;
   line-height: 12px;
 
   leading-trim: both;
@@ -153,7 +153,6 @@
 
   background: rgba(30, 30, 30, 0.5);
   backdrop-filter: blur(2px);
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 8px;
 
   cursor: grab;
@@ -343,7 +342,7 @@
     width: 228px;
     height: 20px;
 
-    font-family: var(--preto-adicional);
+    font-family: var(--font-poppins);
     font-style: normal;
     font-weight: 600;
     font-size: 16px;

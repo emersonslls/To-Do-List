@@ -274,35 +274,3 @@
 }
 
 
-
-/* MESNAGEM */
-
-/* Mensagem de erro */
-.errorMessage {
-    color: #ff4d4d;
-    /* Vermelho */
-    font-size: 14px;
-    margin-top: 5px;
-    text-align: center;
-    background-color: #ffe6e6;
-    /* Fundo vermelho claro */
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ff4d4d;
-    width: 100%;
-}
-
-/* Mensagem de sucesso */
-.successMessage {
-    color: #28a745;
-    /* Verde */
-    font-size: 14px;
-    margin-top: 5px;
-    text-align: center;
-    background-color: #d4edda;
-    /* Fundo verde claro */
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #28a745;
-    width: 100%;
-}
