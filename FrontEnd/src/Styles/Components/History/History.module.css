@@ -1,0 +1,115 @@
+.ContainerHistory {
+    position: absolute;
+    width: 1440px;
+    height: 800px;
+    left: calc(50% - 1440px/2);
+    top: 560px;
+
+    background: rgba(68, 68, 68, 0.2);
+    border-radius: 45px 45px 0px 0px;
+}
+
+.HistoryTable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 28px;
+
+    position: absolute;
+    width: 1251px;
+    height: 253px;
+    left: 94.52px;
+    top: 53px;
+}
+
+.HistoryTable tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 45px;
+
+    width: 1258px;
+    height: 61px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.HistoryTable th {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 36px;
+    gap: 10px;
+
+    width: 281px;
+    height: 61px;
+
+    background: linear-gradient(93.93deg, rgba(30, 30, 30, 0.5) 17.21%, rgba(255, 82, 82, 0.268) 131.51%);
+    border: 1px solid rgba(248, 247, 237, 0.5);
+    border-radius: 26px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: var(--font-exo);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: var(--branco);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.HistoryTable td {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 36px;
+    gap: 10px;
+
+    width: 281px;
+    height: 61px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: var(--font-exo);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: var(--branco);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.HistoryTable tbody{
+    gap: 20px;
+}

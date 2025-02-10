@@ -43,7 +43,7 @@ function Login() {
                             />
                             <p>Mostrar Senha</p>
                         </label>
-                        <a href="#" className={styles.EsqueceuSenha}>
+                        <a href="/esqueceuasenha" className={styles.EsqueceuSenha}>
                             Esqueceu a senha?
                         </a>
                     </div>

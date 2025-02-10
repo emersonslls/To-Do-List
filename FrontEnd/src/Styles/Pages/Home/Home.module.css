@@ -6,7 +6,7 @@
     background: var(--preto);
     overflow: hidden;
 
-       & .Background {
+    & .Background {
         position: absolute;
         width: 2473.33px;
         height: 1257.99px;
@@ -15,5 +15,5 @@
 
         opacity: 0.2;
         z-index: 0;
-    } 
+    }
 }

@@ -4,18 +4,20 @@
     height: 1080px;
 
     background: var(--preto);
+
     overflow: hidden;
 
-    & .Background {
+    & 
+    .Background {
         position: absolute;
         width: 2473.33px;
         height: 1257.99px;
         left: -375.52px;
         top: -177px;
-
+    
         opacity: 0.2;
         z-index: 0;
-    }
+    } 
 }
 
 .Logo {

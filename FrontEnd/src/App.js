@@ -7,6 +7,8 @@ import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import Cadastro from "./Pages/Cadatsro/Cadastro";
 import LoadingScreen from "./Components/Loading/LoadingScreen";
+import EsqueceuSenha from "./Pages/EsqueceuSenha/EsqueceuSenha";
+import Perfil from "./Pages/Perfil/Perfil";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -26,6 +28,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/esqueceuasenha" element={<EsqueceuSenha />} />
+        <Route path="/perfil" element={<Perfil />} />
       </Routes>
     </>
   );
